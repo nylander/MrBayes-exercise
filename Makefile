@@ -1,5 +1,5 @@
 # Makefile for the mb lab
-# Last modified: Thu Mar 12, 2020  05:51PM
+# Last modified: Thu Mar 12, 2020  06:18PM
 # Sign: JN
 
 LYX = lyx
@@ -18,9 +18,9 @@ MBDIR = www/mb
 
 READMEHTML = www/README.html
 
-pdf: $(PDF)
-
 all: pdf www
+
+pdf: $(PDF)
 
 WWW:
 	mkdir -p $(MBDIR)

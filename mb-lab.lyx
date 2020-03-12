@@ -1,0 +1,1689 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{a4wide}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "beramono" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\family sans
+Computer Exercise – Molecular Phylogenetics
+\end_layout
+
+\begin_layout Author
+
+\family sans
+Johan Nylander, NRM/NBIS
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\family sans
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Gorilla.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/hylobatesconcolor-blackgibbon.jpg
+	lyxscale 15
+	scale 15
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/LemurCatta_UT.jpg
+	lyxscale 15
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Macaca_fascicularis.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Macaca_fusca_Japanese_macac.jpg
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Macaca_mulatta_Rhesus.jpg
+	lyxscale 33
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Macaca_sylvanus_Berber.jpg
+	lyxscale 13
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Pan.jpg
+	lyxscale 15
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Pngo_pygmaeus.jpg
+	lyxscale 15
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Saimiri_sciureus.jpg
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/Tarsius_syrichta.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset Graphics
+	filename images/The_Donald.jpg
+	lyxscale 33
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\family sans
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+In this lab we will analyze the phylogenetic relationships and molecular
+ evolution of a group of primates using mitochondrial DNA sequences.
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+We will use a 
+\begin_inset CommandInset href
+LatexCommand href
+name "Bayesian"
+target "http://en.wikipedia.org/wiki/Bayesian_inference"
+
+\end_inset
+
+ approach using 
+\begin_inset CommandInset href
+LatexCommand href
+name "Markov chain Monte Carlo"
+target "http://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo"
+
+\end_inset
+
+ to approximate the posterior distribution of trees and parameters in an
+ evolutionary model.
+ This method is implemented in the program we will use for the analysis:
+ 
+\begin_inset CommandInset href
+LatexCommand href
+name "MrBayes"
+target "http://mrbayes.net/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Note:
+\end_layout
+
+\begin_layout Standard
+Through out this document, the font of the text will reflect differences
+ in how it should be interpreted.
+ For example a
+\family typewriter
+\series bold
+ typewriter text
+\family default
+\series default
+ will represent a command to the software.
+ If and when this command should be typed (by you) will be clear from the
+ context.
+ Most often, such 
+\begin_inset Quotes eld
+\end_inset
+
+action needed
+\begin_inset Quotes erd
+\end_inset
+
+ section are associated with a bulleted (●) list item.
+\end_layout
+
+\begin_layout Section
+
+\family sans
+Material
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Species
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Tarsier"
+target "http://en.wikipedia.org/wiki/Tarsier"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Philippine tarsier (
+\emph on
+Tarsius (Carlito) syrichta
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Lemurs"
+target "http://en.wikipedia.org/wiki/Lemurs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Ring-tailed lemur (
+\emph on
+Lemur catta
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "New World Monkeys"
+target "http://en.wikipedia.org/wiki/New_World_Monkeys"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Common squirrel monkey (
+\emph on
+Saimiri sciureus
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Old World Monkeys"
+target "http://en.wikipedia.org/wiki/Old_World_Monkeys"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Macaques (
+\emph on
+Macaca fuscata, M.
+ sylvanus, M.
+ mulatta, M.
+ fascicularis
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Primates"
+target "http://en.wikipedia.org/wiki/Primates"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Human (
+\emph on
+Homo
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Chimpanzee (
+\emph on
+Pan
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Gorilla (
+\emph on
+Gorilla
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Orangutan (
+\emph on
+Pongo
+\emph default
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Gibbon (
+\emph on
+Hylobates
+\emph default
+)
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Data
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The DNA sequences are stored in the file 
+\family typewriter
+primatesX.txt
+\family sans
+ [
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.abc.se/~nylander/pub/mb/primatesX.txt"
+target "http://www.abc.se/~nylander/pub/mb/primatesX.txt"
+
+\end_inset
+
+], and are written in a format called the Nexus format.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Open this file with a Text editor
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+On MS Windows, look for 
+\begin_inset Quotes eld
+\end_inset
+
+NotePad
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The Nexus format consists of information stored in blocks.
+ 
+\family typewriter
+primatesX.txt
+\family sans
+ contains two blocks, a data block (defined by the text 
+\family typewriter
+\series bold
+begin data;
+\family sans
+\series default
+, and ends with an 
+\family typewriter
+\series bold
+end;
+\family sans
+\series default
+), and a MrBayes block (starts with 
+\family typewriter
+\series bold
+begin
+\series default
+ 
+\series bold
+mrbayes;
+\family sans
+\series default
+, and ends with an 
+\family typewriter
+\series bold
+end;
+\family sans
+\series default
+).
+ The data block contains the DNA sequences and information on the sequence
+ length (
+\family typewriter
+\series bold
+nchar
+\family sans
+\series default
+), number sequences (
+\family typewriter
+\series bold
+ntax
+\family sans
+\series default
+), etc.
+ The MrBayes block contains specific instructions to the program for doing
+ the phylogenetic analysis.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Close the file (and make sure to take a note where it is located on your
+ hard drive).
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Program
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The program is called mrbayes and can be downloaded for free 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://mrbayes.net"
+target "http://mrbayes.net"
+
+\end_inset
+
+.
+ For detailed information on the software, the manual can be accessed from
+ the software's web page, or from this 
+\begin_inset CommandInset href
+LatexCommand href
+name "PDF"
+target "http://nbisweden.github.io/MrBayes/assets/mb3.2_manual.pdf"
+
+\end_inset
+
+.
+ To repeat, the program samples trees from a posterior distribution using
+ a simulation technique called Markov chain Monte Carlo (MCMC), and can
+ calculate probabilities for hypothesis of phylogenetic relationships.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Start the program by double-clicking the program icon or entering the name
+ of the program at the prompt in a terminal window.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+How to start the software is dependent on which operating system you are
+ currently using.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Type the string 
+\family typewriter
+\series bold
+help
+\family sans
+\series default
+ at the command line to display the documentation of commands.
+\end_layout
+
+\begin_layout Section
+
+\family sans
+Analyses
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+A typical analysis with MrBayes consist of 6 steps:
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Specify the 
+\emph on
+data
+\emph default
+ (read the data into computer memory)
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Specify an 
+\emph on
+evolutionary model
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Specify the 
+\emph on
+priors for the parameters
+\emph default
+ in the model
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Specify the 
+\emph on
+rules for the Markov chain
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Start the simulation
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Summarize the results
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Specify data
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Type the command
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+Normally you manually type the path to the input file as an argument to
+ MrBayes, but you might also try to 
+\begin_inset Quotes eld
+\end_inset
+
+drag and drop
+\begin_inset Quotes erd
+\end_inset
+
+ the file icon into the MrBayes terminal.
+ The full path to the file will then automatically be filled in.
+ Hence, type 
+\family typewriter
+\series bold
+exe
+\family sans
+\series default
+ and then drag the file.
+ The whole line will read something similar to 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+\series bold
+exe C:
+\backslash
+full
+\backslash
+path
+\backslash
+to
+\backslash
+primatesX.txt
+\family sans
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\family typewriter
+\series bold
+exe primatesX.txt
+\end_layout
+
+\begin_layout Standard
+If the software managed to find the input file, you will see some progress
+ printing starting with 
+\begin_inset Quotes eld
+\end_inset
+
+Executing file "primatesX.txt"
+\begin_inset Quotes erd
+\end_inset
+
+, and ending with 
+\begin_inset Quotes eld
+\end_inset
+
+Reached end of file
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Specify an evolutionary model
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+A 
+\begin_inset CommandInset href
+LatexCommand href
+name "substitution model"
+target "http://en.wikipedia.org/wiki/Substitution_model"
+
+\end_inset
+
+ can be set by using the command 
+\family typewriter
+\series bold
+lset
+\family sans
+\series default
+.
+ We shall start with the model that is the default in MrBayes: 
+\begin_inset CommandInset href
+LatexCommand href
+name "F81"
+target "http://en.wikipedia.org/wiki/Models_of_DNA_evolution#F81_model_.28Felsenstein_1981.29.5B3.5D"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Look at the current model settings by typing the command 
+\family typewriter
+\series bold
+showmodel
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+This will display the 
+\begin_inset Quotes eld
+\end_inset
+
+Active parameters
+\begin_inset Quotes erd
+\end_inset
+
+ of the model, which are the parameters the MCMC analysis will sample/change
+ during the run.
+ For the default (F81) model, we basically assume that the frequencies of
+ A, C, G, and T's (state frequencies) are allowed to be unequal among the
+ different species in our tree.
+ We will also assume that the rate of evolution may differ among species
+ in the tree (hence the parameter 
+\begin_inset Quotes eld
+\end_inset
+
+Brlens
+\begin_inset Quotes erd
+\end_inset
+
+ - branch lengths).
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Specify the priors for the parameters in the model
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+Prior distributions can be set by using the command 
+\family typewriter
+\series bold
+prset
+\family sans
+\series default
+.
+ We shall start with the default settings MrBayes (hence not changing any
+ priors at the moment).
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Look at the prior settings by again typing the command 
+\family typewriter
+\series bold
+showmodel
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+For all active parameters in our model, the MCMC need to know how we model
+ our prior assumptions about the parameter values.
+ These are listed under 
+\begin_inset Quotes eld
+\end_inset
+
+Prior
+\begin_inset Quotes erd
+\end_inset
+
+, and most often consist of some kind of distribution (
+\begin_inset Quotes eld
+\end_inset
+
+Dirichlet
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Exponential
+\begin_inset Quotes erd
+\end_inset
+
+, etc).
+ For example, we will assume an uniform prior distribution on the prior
+ probability of trees, i.e., 
+\begin_inset Quotes eld
+\end_inset
+
+All topologies equally probable a priori
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Specify the rules for the Markov chain
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The rules for Markov chain is specified with the command 
+\family typewriter
+\series bold
+mcmcp
+\family sans
+\series default
+.
+ We shall start with a simple setting and must therefore make sure some
+ settings are correctly specified.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Type the command 
+\family typewriter
+\series bold
+mcmcp nruns=1 nchains=1
+\end_layout
+
+\begin_layout Standard
+This will make sure we run only one single Markov chain in our simulation,
+ while disabling some time consuming chain diagnostics.
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Start the simulation
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The Markov chain is started by using the command 
+\family typewriter
+\series bold
+mcmc
+\family sans
+\series default
+.
+ We shall start with a shorter simulation (typically, simulations are run
+ to generate a million to hundreds of millions of samples).
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Type the command 
+\family typewriter
+\series bold
+mcmc ngen=500000
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+When the run have finished, answer 
+\family typewriter
+\series bold
+no
+\family sans
+\series default
+ to the question 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+Continue with analysis?
+\family sans
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+Now take a look in your working directory.
+ While doing the simulation, MrBayes created a number of output files.
+ The two most interesting are the tree file (file extension 
+\family typewriter
+.t
+\family sans
+), and the parameter file (file extension 
+\family typewriter
+.p
+\family sans
+).
+ These two files contain the values (trees and other parameters) sampled
+ by the Markov chain.
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Summarize the results
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The trees and the parameters can be summarized using the commands 
+\family typewriter
+\series bold
+sumt
+\family sans
+\series default
+ and 
+\family typewriter
+\series bold
+sump
+\family sans
+\series default
+, respectively.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Summarize the samples in the parameter file by typing the command 
+\family typewriter
+\series bold
+sump
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Summarize the samples in the tree file by typing the command 
+\family typewriter
+\series bold
+sumt
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+Now take a look in your working directory.
+ MrBayes created yet a number of new files.
+ These basically contain the information that was displayed on the screen
+ when you did the summary.
+\end_layout
+
+\begin_layout Section
+
+\family sans
+Questions
+\end_layout
+
+\begin_layout Standard
+By looking at the tree, either the one displayed in the terminal window,
+ or by opening the file with the 
+\begin_inset Quotes eld
+\end_inset
+
+.con.tre
+\begin_inset Quotes erd
+\end_inset
+
+ extension using a tree-viewing program (e.g.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+FigTree
+\begin_inset Quotes erd
+\end_inset
+
+), you should be able to address the following questions:
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Which species is our (Humans) closest relative?
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+How certain/uncertain is this relationship based on your analysis?
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Which group of Monkeys is the closest relatives to the Primates?
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Did we (Humans) evolve faster or slower than our closest relative/relatives?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\family sans
+Analysis, continued
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Patterns in molecular evolution
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+The following analysis is performed on the same data as we used previously,
+ but using a substitution model that explicitly allows the three codon positions
+ in a protein coding DNA sequence to have different evolutionary rates.
+ The task is to answer the questions:
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Does the evolutionary rate vary among classes of codon positions (
+\begin_inset Quotes eld
+\end_inset
+
+first
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+second
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+third
+\begin_inset Quotes erd
+\end_inset
+
+) in the analyzed gene sequences?
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Can you give an explanation to any observed pattern/lack of pattern?
+\end_layout
+
+\begin_layout Standard
+A protein coding DNA sequence, is a stretch of DNA which can be translated
+ to amino acid sequences based on positional 
+\begin_inset Quotes eld
+\end_inset
+
+codons
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+triplets
+\begin_inset Quotes erd
+\end_inset
+
+, divided then into first, second, and third 
+\begin_inset Quotes eld
+\end_inset
+
+codon position
+\begin_inset Quotes erd
+\end_inset
+
+.
+ That is, the DNA sequence comes in the order 
+\begin_inset Quotes eld
+\end_inset
+
+first, second, third, first, second, third, first, secod, ...
+\begin_inset Quotes erd
+\end_inset
+
+ etc.
+ Each unique combination of letters in a codon will 
+\begin_inset Quotes eld
+\end_inset
+
+code for
+\begin_inset Quotes erd
+\end_inset
+
+ a specific amino acid.
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+Below is a figure with the genetic code in which triplets (codons) are coding
+ for amino acids (Phe, Leu, Ser, etc.).
+ For example, starting from the center of the circle with the letter A,
+ then moving outwards, G
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rightarrow$
+\end_layout
+
+\end_inset
+
+G will represent the codon AGG, which will code for Arginine.
+ A
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rightarrow$
+\end_layout
+
+\end_inset
+
+G
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+rightarrow$
+\end_layout
+
+\end_inset
+
+C will code for Serine, etc.
+ We can also note that, for example, any of the codons ACG, ACA, ACC, and
+ ACU code for Valine, or that Arginine can be generated by the codons CGG,
+ CGA, CGC, CGU, AGG, AGA.
+ For more background information, see 
+\begin_inset CommandInset href
+LatexCommand href
+name "here."
+target "http://en.wikipedia.org/wiki/Genetic_code"
+
+\end_inset
+
+, and more specifically, 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "http://en.wikipedia.org/wiki/Codon_degeneracy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/codons2-wikipedia.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The genetic code (
+\begin_inset CommandInset href
+LatexCommand href
+name "original source"
+target "https://li.wikipedia.org/wiki/DNA#/media/File:Aminoacids_table.svg"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\family sans
+Analysis
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Download the file 
+\family typewriter
+primatesY.txt
+\family sans
+ [
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.abc.se/~nylander/pub/mb/primatesY.txt"
+target "http://www.abc.se/~nylander/pub/mb/primatesY.txt"
+
+\end_inset
+
+] and open it with a text editor.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+The sequence data are identical to the previous analysis, but now we added
+ some specifications in the MrBayes block.
+ The commands now activated will allow MrBayes to identify different classes
+ of the data (i.e., columns in the data alignment) as belonging to either
+ 
+\begin_inset Quotes eld
+\end_inset
+
+first
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+second
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+third
+\begin_inset Quotes erd
+\end_inset
+
+ codon position.
+ Furthermore, the program now allows the substitution rate for the different
+ classes to be modeled separately by using a 
+\begin_inset Quotes eld
+\end_inset
+
+rate multiplier
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\emph on
+m,
+\emph default
+ one for each character class.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+Repeat the same steps 3.1 – 3.6 as above, but use the file 
+\family typewriter
+primatesY.txt
+\family sans
+ as input.
+ Pay attention to the output of the 
+\family typewriter
+\series bold
+showmodel
+\family sans
+\series default
+ command, do you see the extra model components (the rate multipliers)?
+\end_layout
+
+\begin_layout Subsection
+Questions
+\end_layout
+
+\begin_layout Enumerate
+Take a look at the output from the 
+\family typewriter
+\series bold
+sump
+\family default
+\series default
+ and 
+\family typewriter
+\series bold
+sumt
+\family default
+\series default
+ commands.
+ Can you see any differences compared to the previous analysis (questions
+ in 4)?
+\end_layout
+
+\begin_layout Enumerate
+How about the two questions in 5.1? What do you see?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\family sans
+Does the evolutionary rate vary among classes of codon positions (
+\begin_inset Quotes eld
+\end_inset
+
+first
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+second
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+third
+\begin_inset Quotes erd
+\end_inset
+
+) in the analyzed gene sequences (hint: look at the rate multipliers, 
+\begin_inset Formula $m_{1},m_{2},m_{3}$
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+Can you give an explanation to any observed pattern/lack of pattern?
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
